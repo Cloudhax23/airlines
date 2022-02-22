@@ -106,7 +106,7 @@ push_month <- function(obj, csv, ...) {
 #' @importFrom DBI dbWriteTable
 
 init_carriers <- function(obj, ...) {
-  src <- "http://www.transtats.bts.gov/Download_Lookup.asp?Lookup=L_UNIQUE_CARRIERS"
+  src <- "https://www.transtats.bts.gov/Download_Lookup.asp?Y11x72=Y_haVdhR_PNeeVRef"
   lcl <- paste0(attr(obj, "raw_dir"), "/carriers.csv")
   
   if (!file.exists(lcl)) {
