@@ -49,7 +49,7 @@ ontime <- etl("airlines", db = db, dir = "~/dumps/airlines")
 ```{r, eval=FALSE}
 ontime %>%
   etl_init() %>%
-  etl_update(years = 1987:2016)
+  etl_update(years = 1987:2021)
 ```
 
 ## Verify
