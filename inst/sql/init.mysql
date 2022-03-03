@@ -77,7 +77,7 @@ CREATE TABLE `carriers` (
   `carrier` varchar(7) NOT NULL DEFAULT '',
   `name` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`carrier`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 DROP TABLE IF EXISTS airports;
 
@@ -92,7 +92,7 @@ CREATE TABLE `airports` (
   `city` varchar(255) DEFAULT NULL,
   `country` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`faa`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 DROP TABLE IF EXISTS planes;
 
@@ -107,7 +107,7 @@ CREATE TABLE `planes` (
   `speed` int(11) DEFAULT NULL,
   `engine` text,
   PRIMARY KEY (`tailnum`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 # DROP VIEW IF EXISTS summary;
 # CREATE VIEW summary AS 
